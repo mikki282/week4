@@ -1,0 +1,6 @@
+---
+- name: simple playbook to create roles
+  become: true
+  hosts: localhost
+  roles:
+    - webserver
