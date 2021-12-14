@@ -1,3 +1,10 @@
+##connection b/w master node and remote server
+ 1. install ansible on master node and install python on remote server
+ 2. add the ip address of remote servers in the hosts file of master node and configure passwordless access from the master node to remote server.
+ 3. after these steps your server is ready to communicate.
+
+
+
 ## creating playbook to create file or folder on remote server
 
 ---
@@ -21,12 +28,6 @@
           - copy:
                   dest: /home/mikki1/test.txt
                   content: heloo  world
-
-
-
-
-
-
 
 
 
