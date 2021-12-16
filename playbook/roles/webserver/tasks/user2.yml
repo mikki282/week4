@@ -1,8 +1,0 @@
----
-task:
- - name: creating a user named ankit
-   user:
-    name: Ankit
-    shell: /bin/bash
-    password: "{{'password' | password_hash('sha521') }}"
-    state: present

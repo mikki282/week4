@@ -1,4 +1,0 @@
----
-#import tasks
-- import_tasks: user2.yml
-- import_tasks: tmp.yml
