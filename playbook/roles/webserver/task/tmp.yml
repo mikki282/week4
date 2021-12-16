@@ -1,0 +1,9 @@
+
+---
+  tasks:
+    - name: install apache server
+      apt: pkg=apache2 state=latest update_cache=true
+    - name: service get started
+      service:
+              name: httpd
+              state: started

@@ -1,0 +1,6 @@
+---
+- name: simple playbook to create user on all host
+  become: true
+  hosts: localhost
+  roles:
+     - webserver
