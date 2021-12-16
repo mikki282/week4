@@ -1,0 +1,22 @@
+---
+ -
+  hosts: demo
+  become: true
+  tasks:
+      - name: cretae file on remote server
+        file: path=/etc/test.txt state=touch
+ -
+  hosts: demo
+  become: true
+  tasks:
+      - name: cretae dir on remote server
+        file: path=/etc/testdir state=directory
+
+- name: file with content
+    hosts: mikki1
+    become: true
+    tasks:
+          - copy:
+                  dest: /home/mikki1/test.txt
+                  content: heloo  world
+

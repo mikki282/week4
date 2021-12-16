@@ -1,0 +1,9 @@
+--- 
+ - name: creating a directory
+   hosts: localhost
+   become: true
+   tasks:
+           - name: delete h directory in localhost
+             file:
+                     path: /etc/demodir
+                     state: absent
