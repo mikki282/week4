@@ -1,0 +1,11 @@
+---
+- name: simple playbook to create user on all host
+  become: true
+  hosts: all
+  tasks:
+   - name: creating a user named Ankit
+     users:
+      name: Ankit
+      shell: /bin/bash
+      password: "{{ 'password' | password_hash('sha512')}}"
+      state: present 
